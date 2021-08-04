@@ -15,6 +15,8 @@ Project is created with:
 * CSS
 * JavaScript
 * HTML
+* Jquery-3.6.0
+* font-awesome-4.7.0
 
 ## Added Features
 Features I've added:
