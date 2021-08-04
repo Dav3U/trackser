@@ -11,6 +11,10 @@ body{
     font-size: 2em;
 }
 
+.pgraph{
+    color: white;
+}
+
 .bodyDiv .head .pgraph{
     text-shadow: 10px 20px 10px 10px black;
 
@@ -18,7 +22,7 @@ body{
 
 .bodyDiv{
     background: linear-gradient(to right, rgb(16, 36, 73), rgb(84, 14, 124));
-    min-height: 500px;
+    min-height: 600px;
     /* height: 100%; */
     width: 100%;
 }
@@ -87,6 +91,10 @@ body{
     box-shadow: 0px 30px 50px 1px rgba(0, 0, 0, 0.357);
         
 }
+
+/* .header{
+    text-transform: ;
+} */
 
 .listed{
     width: 100%;
