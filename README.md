@@ -16,7 +16,7 @@ Project is created with:
 * JavaScript
 * HTML
 * Jquery-3.6.0
-* font-awesome-4.7.0
+* font-awesome-4.7.0 (edit stylesheet link src in html head to display fa icons)
 
 ## Added Features
 Features I've added:
