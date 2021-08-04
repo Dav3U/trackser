@@ -2,6 +2,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Added Features](#added-features)
 * [Setup](#setup)
 
 ## General info
@@ -14,3 +15,11 @@ Project is created with:
 * CSS
 * JavaScript
 * HTML
+
+## Added Features
+Features I've added:
+* 04/08/2021 - Added counter for new taks and completed tasks using JavaScript.
+* 04/08/2021 - Added progress, progress-bar bootstrap classes for tracking task completion % (percentage).
+* 04/08/2021 - Progress Bar is responsive to newly added tasks, deleted tasks and completed tasks.
+
+
