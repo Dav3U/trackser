@@ -116,8 +116,8 @@ inp.focus();
 
 
 }
-delBtn.addEventListener('click',deleteList)
-checkBtn.addEventListener('click',doneList)
+delBtn.addEventListener('click', deleteList)
+checkBtn.addEventListener('click', doneList)
 
 }
 
@@ -126,16 +126,23 @@ checkBtn.addEventListener('click',doneList)
 function deleteList(){
     this.parentElement.style.display='none'
 
-    if(listCounter!=0 && doneCounter !=0)
+    if(listCounter!=0)
     {
     listCounter-=1
-    doneCounter-=1
     }
+
+    if(this.parentElement.querySelector('p').classList.contains('strike'))
+    {
+    doneCounter-=1
+
+    }
+    
 
      if (listCounter==0 && doneCounter ==0)
     {
         taskCompletion =0;
     }
+    
 
     else
     {
