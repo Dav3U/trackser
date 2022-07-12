@@ -16,6 +16,9 @@ var progText = document.getElementById('progText');
 
 var taskProg = document.getElementById('taskProg');
 
+var delAllBtn = document.getElementById('delAllBtn');
+
+
 var listCounter=0;
 
 var doneCounter = 0;
@@ -116,11 +119,64 @@ inp.focus();
 
 
 }
-delBtn.addEventListener('click', deleteList)
-checkBtn.addEventListener('click', doneList)
+delBtn.addEventListener('click',deleteList)
+checkBtn.addEventListener('click',doneList)
+
+delAllBtn.addEventListener('click',delAll)
+
 
 }
+// ADD DROPDOWN MENU TO DELETE ALL TASKS OR ONLY COMPLETED TASKS
+function delAll(){
+    // for(i=0;i<=listCounter;i++)
+    // {
+    //     var i=0;
+        
+    //     while(i<=listCounter)
 
+    listDiv.innerHTML="";
+    listCounter=0
+    doneCounter=0
+    taskCompletion=0
+
+    progressBar.style.width = taskCompletion + '%'
+    progText.innerHTML= taskCompletion + '%'
+
+taskProg.innerHTML ="Task Completion Progress "+ doneCounter +"/"+listCounter
+
+
+    // }
+    
+}
+
+function updateCounters(){
+    if(listCounter!=0)
+    {
+    listCounter-=1
+    }
+
+    if(this.parentElement.querySelector('p').classList.contains('strike'))
+    {
+    doneCounter-=1
+
+    }
+    
+
+     if (listCounter==0 && doneCounter ==0)
+    {
+        taskCompletion =0;
+    }
+
+    else
+    {
+
+    taskCompletion = Math.floor((doneCounter/listCounter) * 100);
+    }
+    progressBar.style.width = taskCompletion + '%'
+    progText.innerHTML= taskCompletion + '%'
+
+taskProg.innerHTML ="Task Completion Progress "+ doneCounter +"/"+listCounter
+}
 
 
 function deleteList(){
@@ -142,7 +198,6 @@ function deleteList(){
     {
         taskCompletion =0;
     }
-    
 
     else
     {
@@ -162,6 +217,8 @@ taskProg.innerHTML ="Task Completion Progress "+ doneCounter +"/"+listCounter
 
 
 }
+
+
 
 
 function doneList(){
