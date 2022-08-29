@@ -26,7 +26,7 @@ var doneCounter = 0;
 document.onload =inp.focus()
 
 
-pgraph.style.textTransform="uppercase"
+// pgraph.style.textTransform="uppercase"
 // pgraph.style.marginTop="20px"
 
 var taskCompletion=0;
@@ -83,6 +83,7 @@ taskProg.innerHTML ="Task Completion Progress "+ doneCounter +"/"+listCounter
 err.style.display='none';
     
 listed= document.createElement('div');
+
 
 listed.classList.add('listed');
 
