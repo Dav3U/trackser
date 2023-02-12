@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="./to-do.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+
+    
+</head>
+
+
+<body>
+
+    <div class="bodyDiv" id="maindiv">
+
+        <div class="to-do-body">
+
+    <header class="head">
+        <p class="pgraph" id="pgraph">To-Do List</p>
+        <p class="vision">organize & track tasks..</p>
+    </header>
+
+        <div class="inputdiv">
+
+    <input type="text" class="inp" id="inp" placeholder="Type your New List here" ><button class="fa fa-plus fa-1.5x icon" id="addBtn"></button>
+
+   
+    <div class="erd">
+        <span class="err" id="err">Please fill an input!</span>
+       </div>
+        </div>
+
+     
+
+        <div class="list" id="listDiv">
+        </div>
+
+        <p class="text-center pgraph" id="taskProg">Task Completion Progress</p>
+        
+        <div class="progress" style="margin-top: 10%; height:30px; width: 50%; margin: auto ;" > 
+            
+            
+            <div class="progress-bar  bg-success text-center" id="progressBar" >
+            <p id="progText"></p>
+
+            </div>
+        </div>
+       
+    </div>
+
+</div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap.js"></script>
+        
+    <script src="to-do.js"></script>
+</body>
+</html>
