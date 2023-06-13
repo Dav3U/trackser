@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Trackser</title>
 
     <link rel="stylesheet" href="./to-do.css">
 
     <script src="https://kit.fontawesome.com/2022b858f6.js" crossorigin="anonymous"></script>
-    <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
-    crossorigin="anonymous">
-
+   
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
 </head>
 
@@ -23,18 +22,18 @@
 
     <div class="bodyDiv container-fluid" id="bodyDiv">
 
-        <div class="to-do-body row">
+        <div class="to-do-body  row">
             
-<div class="col-sm-12 col-md-12 col-lg-6 highlight">
+<div class="col-sm-12 col-md-10 col-lg-6 highlight">
 
     <header class="head ">
-        <p class="pgraph" id="pgraph">To-Do List</p>
-        <p class="vision">organize & track tasks..</p>
+        <p class="pgraph fw-bold p-1" id="pgraph">trackser</p>
+        <p class="vision fw-lighter">organize & track your daily tasks..</p>
     </header>
 
         <div class="inputdiv text-center ">
 
-    <input type="text" class="inp " id="inp" placeholder="Type your New List here" >
+    <input type="text" class="inp " id="inp" placeholder="Enter your new task here" >
     
     <button title="createListBtn" type="submit" class="fa fa-plus fa-1.5x icon " id="addBtn"></button>
         </div>
